@@ -1,5 +1,5 @@
 # Meus Projetos
-<p> Neste repositório você irá encontrar meus primeiros passos como desenvolvedor. Sinta-se a vontade!!
+<p> Neste repositório você irá encontrar meus primeiros passos como desenvolvedor. Sinta-se a vontade para explorar!!
   
 ## 1. [Pokemon Card](https://github.com/royalfelep/pequenos-projetos/tree/main/pokemon_card)
 <p> Meu primeiro projetinho em HTML, CSS e JS. É um cartão animado e totalmente responsivo que se move conforme a posição do cursor. É simples mas é trabalho honesto :)
