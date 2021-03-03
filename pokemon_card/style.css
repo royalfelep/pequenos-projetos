@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 20px 50px rgba(0,0,0,0.2);
+    height: 80vh;
+    width: 30rem; 
+    border-radius: 30px;
+    padding: 0rem 4rem;
+    transform-style: preserve-3d;
+}
+
+.pokemon{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon img{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    width: 300px;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(255, 196, 0, 0.75),
+        rgba(255, 96, 4, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.poketitle{
+    transition: all 0.75s ease-out;
+}
+
+.pokeinfo{
+    transition: all 0.75s ease-out;
+}
+
+.poketitle h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.pokeinfo h3 {
+    text-align: center;
+    font-size:0.5 rem;
+    padding: 0.5rem 0rem;
+    color: #000000;
+    font-weight: 200;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    transition: all 0.75s ease-out;
+}
+
+.buttons button{
+    padding: 1rem 1.6rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858
+}
+
+.middle-button{
+margin-left: 20%;
+margin-right: 20%;
+}
+
+.buttons button:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+    color: black;
+}
