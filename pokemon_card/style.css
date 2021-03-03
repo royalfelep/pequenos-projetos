@@ -14,6 +14,7 @@ body{
 }
 
 .container {
+    padding: 0;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -23,30 +24,33 @@ body{
 .card {
     box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 20px 50px rgba(0,0,0,0.2);
     height: 80vh;
-    width: 30rem; 
+    width: 55vh; 
     border-radius: 30px;
-    padding: 0rem 4rem;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 3vh;
+    padding-top: 3vh;
     transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemon{
-    min-height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .pokemon img{
-    margin-top: 35px;
-    margin-bottom: 30px;
-    width: 300px;
+    width: 25vh;
     z-index: 2;
     transition: all 0.75s ease-out;
 }
 
 .circle {
-    width: 15rem;
-    height: 15rem;
+    width: 20vh;
+    height: 20vh;
     background: linear-gradient(
         to right,
         rgba(255, 196, 0, 0.75),
@@ -66,15 +70,16 @@ body{
 }
 
 .poketitle h1 {
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5vh;
     font-weight: 300;
 }
 
 .pokeinfo h3 {
     text-align: center;
-    font-size:0.5 rem;
-    padding: 0.5rem 0rem;
+    font-size: 2.3vh;
     color: #000000;
     font-weight: 200;
 }
@@ -82,12 +87,13 @@ body{
 .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 3vh;
     transition: all 0.75s ease-out;
 }
 
 .buttons button{
-    padding: 1rem 1.6rem;
+    font-size: 1.4vh;
+    padding: 1.5vh 3.5vh;
     background: none;
     border: none;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
@@ -98,8 +104,8 @@ body{
 }
 
 .middle-button{
-margin-left: 20%;
-margin-right: 20%;
+margin-left: 6vh;
+margin-right: 6vh;
 }
 
 .buttons button:hover{
