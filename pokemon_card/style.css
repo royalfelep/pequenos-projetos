@@ -5,6 +5,7 @@
 }
 
 body{
+    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -14,6 +15,7 @@ body{
 }
 
 .container {
+    position: relative;
     padding: 0;
     width: 50%;
     display: flex;
@@ -22,18 +24,13 @@ body{
 }
 
 .card {
+    position: absolute;
     box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 20px 50px rgba(0,0,0,0.2);
     height: 80vh;
-    width: 55vh; 
-    border-radius: 30px;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    padding-top: 3vh;
-    padding-top: 3vh;
+    width: 50vh; 
+    border-radius: 4vh;
+    padding: 4vh 5vh 2vh;
     transform-style: preserve-3d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .pokemon{
@@ -61,54 +58,62 @@ body{
     z-index: 1;
 }
 
-.poketitle{
-    transition: all 0.75s ease-out;
+.text{
+    text-align: center;
 }
 
-.pokeinfo{
-    transition: all 0.75s ease-out;
-}
-
-.poketitle h1 {
+.text h1 {
     margin-top: 2.5vh;
-    margin-bottom: 1vh;
     text-align: center;
     font-size: 5vh;
     font-weight: 300;
 }
 
-.pokeinfo h3 {
+.text h3 {
+    justify-content: center;
     text-align: center;
-    font-size: 2.3vh;
+    font-size: 2.4vh;
     color: #000000;
     font-weight: 200;
 }
 
-.buttons {
+.buttons ul{
     display: flex;
-    justify-content: center;
-    margin-top: 3vh;
+    margin-top: 2.5vh;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
     transition: all 0.75s ease-out;
 }
 
-.buttons button{
-    font-size: 1.4vh;
+.buttons ul li a{
+    display: flex;
     padding: 1.5vh 3.5vh;
-    background: none;
-    border: none;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
     border-radius: 20px;
-    cursor: pointer;
+    background: none;
+    border: none;
+
+    font-size: 1.5vh;
+    text-decoration: none;
     font-weight: bold;
-    color: #585858
+    color: rgb(116, 116, 116);
+
+    cursor: pointer;
 }
 
-.middle-button{
-margin-left: 6vh;
-margin-right: 6vh;
+.buttons ul li a:hover{
+    background: linear-gradient(
+        to top,
+        rgb(235, 235, 235) 5%,
+        rgb(255, 255, 255) 100%
+    );
 }
 
-.buttons button:hover{
-    background-color: rgba(0, 0, 0, 0.03);
-    color: black;
+.buttons ul li a:focus{
+    background: linear-gradient(
+        rgb(235, 235, 235) 5%,
+        rgb(255, 255, 255) 100%
+    );
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2), inset 0px 3px 6px rgba(0,0,0,0.2);
 }
