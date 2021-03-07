@@ -15,10 +15,10 @@ body{
 }
 
 .container {
-    position: relative;
-    padding: 0;
-    width: 50%;
     display: flex;
+    padding: 0;
+    width: 85vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
 }
@@ -67,6 +67,7 @@ body{
     text-align: center;
     font-size: 5vh;
     font-weight: 300;
+    transition: all 0.75s ease-out;
 }
 
 .text h3 {
@@ -75,6 +76,11 @@ body{
     font-size: 2.4vh;
     color: #000000;
     font-weight: 200;
+    transition: all 0.75s ease-out;
+}
+
+.buttons{
+    transition: all 0.75s ease-out;
 }
 
 .buttons ul{
@@ -83,17 +89,20 @@ body{
     align-items: center;
     list-style-type: none;
     justify-content: space-evenly;
-    transition: all 0.75s ease-out;
 }
 
 .buttons ul li a{
     display: flex;
     padding: 1.5vh 3.5vh;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    background: linear-gradient(
+        to top,
+        rgb(245, 245, 245) 5%,
+        rgb(255, 255, 255) 100%
+    );
     border-radius: 20px;
-    background: none;
-    border: none;
-
+    border-style: outset;
+    border-width: 0.1px;
+    border-color:rgba(0,0,0,0.1);
     font-size: 1.5vh;
     text-decoration: none;
     font-weight: bold;
@@ -105,15 +114,15 @@ body{
 .buttons ul li a:hover{
     background: linear-gradient(
         to top,
-        rgb(235, 235, 235) 5%,
+        rgb(230, 230, 230) 5%,
         rgb(255, 255, 255) 100%
     );
 }
 
 .buttons ul li a:focus{
     background: linear-gradient(
-        rgb(235, 235, 235) 5%,
+        rgb(230, 230, 230) 5%,
         rgb(255, 255, 255) 100%
     );
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2), inset 0px 3px 6px rgba(0,0,0,0.2);
+    box-shadow: inset 0px 3px 5px rgba(0,0,0,0.1);
 }

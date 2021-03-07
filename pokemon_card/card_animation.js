@@ -2,8 +2,8 @@
 const card = document.querySelector('.card');
 const container = document.querySelector('.container');
 const pokemon = document.querySelector('.pokemon img')
-const poketitle = document.querySelector('.poketitle')
-const pokeinfo = document.querySelector('.pokeinfo')
+const h1 = document.querySelector('.text h1')
+const h3 = document.querySelector('.text h3')
 const buttons = document.querySelector('.buttons')
 
 
@@ -19,8 +19,8 @@ container.addEventListener('mouseenter', (e) => {
     card.style.transition = 'none';
     // Pop out
     pokemon.style.transform = 'translateZ(50px) rotateZ(-10deg)';
-    poketitle.style.transform = 'translateZ(50px)';
-    pokeinfo.style.transform = 'translateZ(50px)';
+    h1.style.transform = 'translateZ(50px)';
+    h3.style.transform = 'translateZ(50px)';
     buttons.style.transform = 'translateZ(50px)';
 })
 
@@ -30,7 +30,7 @@ container.addEventListener('mouseleave', (e) => {
     card.style.transition = 'all 0.5s ease';
     // Pop back
     pokemon.style.transform = 'translateZ(0px) rotateZ(0deg)';
-    poketitle.style.transform = 'translateZ(0px)';
-    pokeinfo.style.transform = 'translateZ(0px)';
+    h1.style.transform = 'translateZ(0px)';
+    h3.style.transform = 'translateZ(0px)';
     buttons.style.transform = 'translateZ(0px)';
 })
